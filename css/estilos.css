@@ -1,0 +1,1802 @@
+* { 
+    margin:0px;
+    padding : 0px;
+    box-sizing : border box;
+    overflow-x : hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* ESTILOS DEL HEADER EN GENERAL */
+
+/* ESTILOS DE LA PORTADA */
+
+.portada {
+    width: 100%;
+}
+
+
+
+.contenedor-textoPortada h2,h1 {
+    text-transform: uppercase;
+}
+
+
+#btn-menu {  /* este es el checkbox, el cual no se debe ver */
+    display: none;
+}
+
+
+
+/* MEDIA QUERY -----> estilos óptimos para Galaxy s5 Android 5.0 */
+
+@media screen and  (max-width:900px) {
+
+        .haeder-2 {
+            display: none;
+        }
+        
+        .portada {
+            width: 100%;
+            filter: brightness(80%);
+        }
+
+        .contenedor-textoPortada h1 {
+            position: absolute;
+            top: 6.5em;
+            left: 3em;
+            color:#fff;
+            font-weight: bold;
+            z-index: 1;
+            font-size:x-large;
+        }
+        .contenedor-textoPortada h2 {
+            position: absolute;
+            top: 5em;
+            left: 5em;
+            color:#fff;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .boton-portada {
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top:17em;
+            left: 12.2em;
+            background-color: #FF5E01;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+
+        .titulo-conocenos {
+            text-align: center;
+            margin-top: 2em;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border-bottom: 5px solid rgb(243, 156, 56);
+            border-bottom-width: 10px; */
+        }
+        .borde-bajo {
+            background: #FEA700;
+            height: 2px;
+            width: 50px;
+            margin-top: 7px;
+        }
+
+
+        .card-entregas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card-entregas h3 {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: 400;
+        }
+        
+        .imagen-envios {
+            width: 80%;
+            margin-top: 50px;
+        }
+
+        .boton-envios {
+            color: white;
+            text-decoration: none;
+            background-color: #FF5E01;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        
+    .section-2-desktop {
+        display: block;
+    }
+
+    .section-2 {
+        display: none;
+    }
+
+    
+    .section-2-desktop {
+        margin-top: 5em;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .bg-img {
+        background-image:url(../imagenes/imagen-propaganda.jpg);
+        height: 70vh;
+        width: 100%;   
+        filter:brightness(0.4);
+        background-size: cover;
+    }
+
+
+    .section-2-desktop .content {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        margin-top: 3em;
+        position: absolute;  
+        top: 0;
+    }
+
+
+    .section-2-desktop div p {
+        text-align: center;
+        margin: 2em 5em;
+    }
+
+    .section-2-desktop {
+        display: block;
+    }
+
+
+    .section-2-desktop div ul li  i {
+        color: rgb(23, 206, 23);
+        margin-right: .4em;
+    }
+
+
+    .boton-quienesSomos-desktop {
+        margin-top: 2em;
+        background-color:#FF5E01;
+        color: white;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2em;
+        text-decoration: none;
+    }
+
+    .boton-quienesSomos-desktop i {
+        margin-left: .5em;
+    }
+
+        .section-3 {
+            margin-top: 50px;
+            margin-bottom: 150px;
+        }
+
+        .cont-bebidas-fav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .titulo-bebidasFav {
+            text-transform: uppercase;
+            font-size: 1.5em;
+            margin: 0 40px 0 40px;
+            text-align: center;
+        }
+
+        .borde-bajo2 {
+            background: #FEA700;
+            height: 3px;
+            width: 50px;
+            margin-top: 7px;
+        }
+
+        .texto-bebidasFav {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 40px 40px;
+            text-align: center;
+        }
+
+        .section-4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .borde-3 {
+            background: #FEA700;
+            height: 1.5px;
+            width: 80%;
+            margin-top: 40px;
+        }
+
+        .bordeGrueso-4 {
+            background: #FEA700;
+            height: 10px;
+            width: 80%;
+            margin-top: 30px;
+        }
+
+        .contenido-sect-4 {
+            text-align: center;
+            margin-top: 40px;
+            height: 20em;
+        }
+
+        .titulo-sedientoPrevia1 {
+            text-transform: uppercase;
+        }
+
+        .titulo-sedientoPrevia2 {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+
+        .texto-sedPrevia {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 40px 40px;
+            text-align: center;
+        }
+
+        .boton-comprar-ahora {
+            color: white;
+            background-color:#FF5E01;
+            border-radius: 50px;
+            padding: 15px 30px 15px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-size: 11px;
+        } 
+
+        .carrito-boton {
+            margin-right: 15px;
+        }
+
+        .contenedor-iconos {
+            background-color: rgb(20, 20, 20);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 10em;
+            height: 10em;
+            border-radius: .5em;
+            margin: 10px 5px 10px 5px;
+            text-align: center;
+        }
+
+        .contenedor-iconos i {
+            font-size: 2em;
+            margin-top:1em;
+            color:orange ;
+        }
+
+        .contenedor-iconos h3 {
+            font-size: 1.6em;
+            color: white;
+        }
+
+        .contenedor-iconos p {
+            color: rgb(197, 194, 194);
+        }
+
+        .section-5 {
+            display: grid;
+            grid-template-areas: "card-1 card2"
+                                 "card-3 card-4";
+            justify-content: center;
+        }
+
+
+        .section-6 {
+           display: flex;
+           flex-direction: column;
+           align-items: center; 
+        }
+
+        .section-6 div{
+            margin-top: 8em;
+            width: 6em;
+        }
+
+        .section-6 h2 {
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-top: 1em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-7 {
+            background-color:#f8f6f3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .card-producto {
+            margin-top: 5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            width: 80%;
+            height: 400px;
+            text-align: center;
+            border-radius: 10px;
+            padding-bottom: 20px;
+        }
+
+        .card-producto h3 {
+            font-size: 1.6em;
+            margin-top: 1.2em;
+        }
+
+        .card-producto p {
+            margin: 20px 40px 20px 40px;
+        }
+
+        .img-card {
+            width: 50%;
+        }
+
+        .card-producto a {
+            color: white;
+            background-color:#FF5E01;
+            border-radius: 50px;
+            padding: 15px 30px 15px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-size: 11px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor-cupon {
+            margin-top: 3em;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+        }
+
+        .titulo-cupon {
+            font-size: 1.5em;
+        }
+
+        .boton-cupon {
+            color: white;
+            background-color:#FF5E01;
+            border-radius: 50px;
+            padding: 15px 30px 15px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-top:1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+        }
+
+        .cuponIcono {
+            margin-left: 1em;
+        }
+
+        .cont-titulo-section8 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .barrita-section8 {
+            background: #FEA700;
+            height: 1.5px;
+            width: 30%;
+            margin-top: 10em;
+        }
+
+        .section-9 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .titulo-comentarios {
+            margin-top: 1em;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .card-comentario1 {
+            width: 95%;
+            height: 18em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5em;
+            border-style: solid;
+            border-width: 1px 1px 1px 1px;
+            border-color: #f8f6f3;
+            box-shadow: 0px 0px 10px 0px rgba(40,40,40,0.1);
+            margin-bottom: 5em;
+        }
+
+        .estrella {
+            margin-top: 2em;
+            color: rgb(240, 191, 59);
+            font-size: .8em;
+        }
+
+        .card-comentario1 p {
+            text-align: center;
+            margin: 1em 3em;
+        }
+
+        .usuario-1 {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%; 
+            object-fit: cover;
+            max-width: none;
+        }
+
+        .contenedor-propaganda {
+            width: 95%;
+            height: 30em;
+            background-image: url(../imagenes/imagen-propaganda.jpg);
+            background-size: cover;              
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: .2em;
+            z-index: -1;
+            
+        }
+
+        .contenedor-propaganda h3 {
+            color: #fff;
+            text-align: center;
+            font-weight: 1em;
+            font-size: 1.5em;
+            margin-top: 5em;
+
+        }
+
+        .boton-propaganda {
+            color: white;
+            background-color:#FF5E01;
+            border-radius: 50px;
+            padding: 15px 30px 15px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-top:1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+        }
+
+        .contenedor-titulo-sec10 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contenedor-titulo-sec10 h2 {
+            margin-top: 30px;
+        }
+
+        .card-contacto {
+            width: 95%;
+            height: 10em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-style: solid;
+            border-width: 1px 1px 1px 1px;
+            border-color: #f8f6f3;
+            box-shadow: 0px 0px 10px 0px rgba(40,40,40,0.1);
+            margin-bottom: 2em;
+            font-size: 1.3em;
+            margin-top: 2em;
+        }
+
+        .contenedor-general-cards-contacto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icono-contacto {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            line-height: 3em;
+            color: #fff;
+            background-color: rgb(31, 29, 29);
+        }
+
+        /* TODOS LOS ESTILOS DEL HEADER RESPONSIVE */
+        
+        /* TODO LO REFERIDO AL BOTÓN RESPONSIVE */
+
+        header label { /* este es el botón,no debe verse en el formato escritorio */
+            float: right;
+            margin: 10px 20px;
+            padding: 10px;
+            display: none;
+        }
+
+        header label:hover {
+            cursor: pointer;
+            background-color: rgba(0,0,0, .3);
+        }
+
+
+        .logo {
+            height: 96px;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color:#fff;
+        }
+        
+        .menu ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        
+        
+        .menu ul li:hover {
+            background-color: rgba(0,0,0, .3);
+        }
+        
+        .menu ul li a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        
+        
+        header label img {
+            height: 30px;
+        }
+
+        .logo {
+            height: 56px;
+            margin-left: 20px;
+        }
+
+        header label {
+            display: block;
+            margin-left: 8em;
+        }
+
+        .menu ul {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .menu {
+            position: absolute;
+            top: 10%;
+            background-color: #fff;
+            width: 100%;
+            margin-left: -100%;
+            transition: all .5s;
+            z-index: 2;
+            padding-bottom: 60px;
+        }
+
+        #btn-menu:checked ~ .menu {
+            margin: 0;
+        }
+}
+
+
+
+/* Media query ------>  estilos específicos, óptimos para galaxy s9 y android 7.0 */
+
+@media screen and  (min-height:730px) {
+
+    .haeder-2 {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top: 10%;
+        background-color: #fff;
+        width: 100%;
+        margin-left: -100%;
+        transition: all .5s;
+        z-index: 2;
+        padding-bottom: 60px;
+    }
+    
+    .contenedor-textoPortada h1 {
+        position: absolute;
+        top: 6.5em;
+        left: 3em;
+        color:#fff;
+        font-weight: bold;
+        z-index: 1;
+        font-size:x-large;
+    }
+    .contenedor-textoPortada h2 {
+        position: absolute;
+        top: 5em;
+        left: 5em;
+        color:#fff;
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    .boton-portada {
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        top:17em;
+        left: 12.2em;
+        background-color: #FF5E01;
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+
+
+    .section-2-desktop {
+        display: block;
+    }
+
+    .section-2 {
+        display: none;
+    }
+
+    
+    .section-2-desktop {
+        margin-top: 5em;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .bg-img {
+        background-image:url(../imagenes/quines-somos.jpg);
+        height: 65vh;
+        width: 100%;   
+        filter:brightness(0.4);
+        background-size: cover;
+    }
+
+
+    .section-2-desktop .content {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        margin-top: 3em;
+        position: absolute;  
+        top: 0;
+    }
+
+
+    .section-2-desktop div p {
+        text-align: center;
+        margin: 2em 5em;
+    }
+
+    .section-2-desktop {
+        display: block;
+    }
+
+
+    .section-2-desktop div ul li  i {
+        color: rgb(23, 206, 23);
+        margin-right: .4em;
+    }
+
+
+    .boton-quienesSomos-desktop {
+        margin-top: 2em;
+        background-color:#FF5E01;
+        color: white;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2em;
+        text-decoration: none;
+    }
+
+    .boton-quienesSomos-desktop i {
+        margin-left: .5em;
+    }
+
+    .haeder-2 {
+        display: none;
+    }
+
+    .estrella {
+        margin-top: 2em;
+        color: rgb(240, 191, 59);
+        font-size: .6em;
+    }
+}
+
+
+
+
+
+
+/* Media querys ----> habilitado para  Ipad, y todo tipo de tablets */
+
+
+@media screen and (min-width:768px) {
+
+    .section-2-desktop {
+        display: block;
+    }
+
+    .section-2 {
+        display: none;
+    }
+
+    
+    .section-2-desktop {
+        margin-top: 5em;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .bg-img {
+        background-image:url(../imagenes/quines-somos.jpg);
+        height: 60vh;
+        width: 100%;   
+        filter:brightness(0.4);
+        background-size: cover;
+    }
+
+
+    .section-2-desktop .content {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        margin-top: 3em;
+        position: absolute;  
+        top: 0;
+    }
+
+
+    .section-2-desktop div p {
+        text-align: center;
+        margin: 2em 5em;
+    }
+
+    .section-2-desktop {
+        display: block;
+    }
+
+
+    .section-2-desktop div ul li  i {
+        color: green;
+        margin-right: .4em;
+    }
+
+
+    .boton-quienesSomos-desktop {
+        margin-top: 2em;
+        background-color:#FF5E01;
+        color: white;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2em;
+        text-decoration: none;
+    }
+
+    .boton-quienesSomos-desktop i {
+        margin-left: .5em;
+    }
+
+    .haeder-2 {
+        display: none;
+    }
+
+    /* TOdo lo del menu responsive, estilos del header */
+    
+    header label { /* este es el botón,no debe verse en el formato escritorio */
+        margin: 10px 20px;
+        padding: 10px;
+        display: none;
+    }
+
+    .logo {
+        height: 96px;
+        margin-left: 20px;
+    }
+
+    header div {
+        margin-right: 300px;
+    }
+
+    header label:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0, .3);
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color:#fff;
+    }
+    
+    .menu ul {
+        list-style: none;
+        display: flex;
+        
+    }
+    
+    
+    
+    .menu ul li:hover {
+        background-color: rgba(0,0,0, .3);
+    }
+    
+    .menu ul li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        margin-top: 50px;
+    }
+    
+    
+    header label img {
+        height: 50px;
+    }
+
+    header label {
+        display: block;
+        margin-left: 8em;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        position: absolute;
+        top: 9%;
+        background-color: #fff;
+        width: 100%;
+        margin-left: -100%;
+        transition: all .5s;
+        z-index: 2;
+        padding-bottom: 120px;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
+    /* Estilos de la portada */
+
+    
+    .contenedor-textoPortada h1 {
+        position: absolute;
+        top: 6em;
+        left: 3.5em;
+        color:#fff;
+        font-weight: bold;
+        z-index: 1;
+        font-size:3em;
+    }
+    .contenedor-textoPortada h2 {
+        position: absolute;
+        top: 7em;
+        left: 9.3em;
+        color:#fff;
+        font-weight: bold;
+        z-index: 1;
+        font-size: 2em;
+    }
+
+    .boton-portada {
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        top:25em;
+        left: 19em;
+        background-color: #FF5E01;
+        padding: 20px 40px;
+        border-radius: 15px;
+        font-size: 1em;
+    }
+
+    /* Estilos section 3 y 4  */
+
+    
+    .section-3 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .cont-bebidas-fav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo-bebidasFav {
+        text-transform: uppercase;
+        font-size: 2em;
+        margin: 0 80px 0 80px;
+        text-align: center;
+    }
+
+    .borde-bajo2 {
+        background: #FEA700;
+        height: 3px;
+        width: 30%;
+        margin-top: 7px;
+    }
+
+    .texto-bebidasFav {
+        font-weight:100;
+        font-size: 1.3em;
+        margin: 40px 40px;
+        text-align: center;
+    }
+
+    .section-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .borde-3 {
+        background: #FEA700;
+        height: 1.5px;
+        width: 30%;
+        margin-top: 40px;
+    }
+
+    .bordeGrueso-4 {
+        background: #FEA700;
+        height: 10px;
+        width: 30%;
+        margin-top: 30px;
+    }
+
+    .contenido-sect-4 {
+        text-align: center;
+        margin-top: 40px;
+        height: 20em;
+    }
+
+    .titulo-sedientoPrevia1 {
+        text-transform: uppercase;
+        font-size: 2em;
+    }
+
+    .titulo-sedientoPrevia2 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin-bottom: 3em;
+    }
+
+
+    .texto-sedPrevia {
+        font-weight: bold;
+        font-size: 1.3em;
+        margin: 40px 40px;
+        text-align: center;
+    }
+
+    .boton-comprar-ahora {
+        color: white;
+        background-color:#FF5E01;
+        border-radius: 50px;
+        padding: 25px 40px 25px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1em;
+    } 
+
+    .carrito-boton {
+        margin-right: 15px;
+    }
+
+
+    /* estilos de la section 6 */
+
+
+    
+    .section-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+     }
+
+     .section-6 div{
+         margin-top: 8em;
+         width: 6em;
+     }
+
+     .section-6 h2 {
+         text-transform: uppercase;
+         font-weight: bolder;
+         margin-top: 1em;
+         text-align: center;
+         margin-bottom: 20px;
+         font-size: 2em;
+     }
+
+
+     /* Estilos section 7- cards de productos */
+
+     
+     .section-7 {
+        background-color:#f8f6f3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .card-producto {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 80%;
+        height: 550px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .card-producto h3 {
+        font-size: 1.6em;
+    }
+
+    .card-producto p {
+        margin: 20px 40px 20px 40px;
+    }
+
+    .img-card {
+        width: 50%;
+    }
+
+    .card-producto a {
+        color: white;
+        background-color:#FF5E01;
+        border-radius: 50px;
+        padding: 15px 30px 15px 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 11px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /* Estilos cupón 25% */
+
+
+    
+    .contenedor-cupon {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .titulo-cupon {
+        font-size: 2.5em;
+    }
+
+    .boton-cupon {
+        color: white;
+        background-color:#FF5E01;
+        border-radius: 50px;
+        padding: 25px 50px 25px 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        margin-top:1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    .cuponIcono {
+        margin-left: 1em;
+    }
+
+
+
+    /* Estilos comentarios - reseñas */
+
+    .titulo-comentarios {
+        margin-top: 1em;
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 2em;
+    }
+
+
+}
+
+
+
+/* Formato de escritorio */
+
+@media screen and (min-width:1000px) {
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    /* Estilos del header */
+    
+    .header-1 {
+        display: none;
+    }
+
+    .haeder-2 {
+        display:flex;
+        position: fixed;
+        justify-content: center;
+        align-content: center;
+        z-index: 2;
+    }
+
+    .haeder-2 nav ul {
+        display: flex;
+    }
+
+    .haeder-2 nav a {
+        text-decoration: none;
+        color: rgb(31, 30, 30);
+        margin-left: 3em;
+    }
+
+    .btn-comprar {
+        margin-left: 3em;
+        color: white;
+        background-color:#FF5E01;
+        border-radius: 50px;
+        padding: 20px 35px 20px 35px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1em;
+    }
+
+    .btn-comprar i {
+        margin-right: .5em;
+    }
+
+    /* Estilos portada */
+    
+    .contenedor-textoPortada h1 {
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        color:#fff;
+        font-weight: bold;
+        z-index: 1;
+        font-size:4em;
+    }
+    .contenedor-textoPortada h2 {
+        position: absolute;
+        top: 45%;
+        left: 41%;
+        color:#fff;
+        font-weight: bold;
+        z-index: 1;
+        font-size: 3em;
+    }
+
+    .boton-portada {
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        top: 73%;
+        left: 43%;
+        background-color: #FF5E01;
+        padding: 25px 40px;
+        border-radius: 15px;
+        font-size: 1.5em;
+    }
+
+    .wave-1 {
+        position: absolute;
+        top: 70vh;
+        width: 100vw;
+        height: 70vh;
+        
+    }
+
+    #portada-desktop {
+        filter: opacity(.9);
+        filter: brightness(.7);
+    }
+
+    /* Estilos section-1 */
+
+    .section-1 {
+        margin-top: 200px;
+    }
+
+    .titulo-conocenos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+
+    .titulo-conocenos h2 {
+        font-size: 2.5em;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+    }
+
+    .borde-bajo {
+        height: .3em;
+        width: 20%;
+        background-color:#FEA700;
+    }
+
+    
+    .card-entregas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-entregas h3 {
+        margin-top: 20px;
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    
+    .imagen-envios {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .boton-envios {
+        color: white;
+        text-decoration: none;
+        background-color: #FF5E01;
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+
+
+
+    /*  Estilos section-2 */
+
+    .section-2 {
+        display: none;
+    }
+    
+    .section-2-desktop {
+        margin-top: 5em;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .bg-img {
+        background-image:url(../imagenes/quines-somos.jpg);
+        height: 100vh;
+        width: 100%;   
+        filter:brightness(0.4);
+        background-size: cover;
+    }
+
+
+    .section-2-desktop .content {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        margin-top: 3em;
+        position: absolute;  
+        top: 0;
+    }
+
+
+    .section-2-desktop div p {
+        text-align: center;
+        margin: 2em 5em;
+    }
+
+    .section-2-desktop {
+        display: block;
+    }
+
+
+    .section-2-desktop div ul li  i {
+        color: green;
+        margin-right: .4em;
+    }
+
+
+    .boton-quienesSomos-desktop {
+        margin-top: 2em;
+        background-color:#FF5E01;
+        color: white;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2em;
+        text-decoration: none;
+    }
+
+    .boton-quienesSomos-desktop i {
+        margin-left: .5em;
+    }
+
+
+
+
+     /* Estilos section 3 y 4  */
+
+    
+     .section-3 {
+        margin-top:10em;
+        margin-bottom: 50px;
+    }
+
+    .cont-bebidas-fav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo-bebidasFav {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .borde-bajo2 {
+        background: #FEA700;
+        height: 3px;
+        width: 20%;
+        margin-top: 7px;
+    }
+
+    .texto-bebidasFav {
+        font-weight:100;
+        font-size: 1.3em;
+        margin: 2em 15em;
+        text-align: center;
+    }
+
+    .section-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10em;
+    }
+
+    .borde-3 {
+        background: #FEA700;
+        height: 1.5px;
+        width: 30%;
+        margin-top: 4em;
+    }
+
+    .bordeGrueso-4 {
+        background: #FEA700;
+        height: 10px;
+        width: 30%;
+        margin-top: 30px;
+    }
+
+    .contenido-sect-4 {
+        text-align: center;
+        margin-top: 40px;
+        height: 20em;
+    }
+
+    .titulo-sedientoPrevia1 {
+        text-transform: uppercase;
+        font-size: 2em;
+    }
+
+    .titulo-sedientoPrevia2 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin-bottom: 2em;
+    }
+
+    .boton-comprar-ahora {
+        color: white;
+        background-color:#FF5E01;
+        border-radius: 50px;
+        padding: 25px 40px 25px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1em;
+    } 
+
+    .carrito-boton {
+        margin-right: 15px;
+    }
+
+
+    /* Estilos de los iconos fondo negro */
+
+    
+
+    .contenedor-iconos {
+        background-color: rgb(20, 20, 20);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20em;
+        height: 20em;
+        border-radius: .5em;
+        margin: 10px 5px 10px 5px;
+        text-align: center;
+    }
+
+    .contenedor-iconos i {
+        font-size: 5em;
+        margin-top:1em;
+        margin-bottom: .6em;
+        color:orange ;
+    }
+
+    .contenedor-iconos h3 {
+        font-size: 1.6em;
+        color: white;
+    }
+
+    .contenedor-iconos p {
+        color: rgb(197, 194, 194);
+    }
+
+    .section-5 {
+        display: grid;
+        grid-template-areas: "card-1 card2"
+                             "card-3 card-4";
+        justify-content: center;
+    }
+
+
+    /* Estilos cards de productos */
+
+     
+    .section-7 {
+        background-color:#f8f6f3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .card-producto {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 50%;
+        height: 85vh;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(40,40,40,0.4);
+    }
+
+    .card-producto h3 {
+        font-size: 2em;
+        text-transform: uppercase;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .card-producto p {
+        margin: 20px 40px 20px 40px;
+        display: none;
+    }
+
+    .img-card {
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    .card-producto a {
+        color: white;
+        background-color:#FF5E01;
+        border-radius: 50px;
+        padding: 25px 40px 25px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1em;
+    }
+
+
+
+    /* Estilos cupón 25% */
+
+
+    .section-8 {
+        margin-bottom: 10em;
+    }
+
+    
+    .contenedor-cupon {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .titulo-cupon {
+        font-size: 3.5em;
+    }
+
+    .boton-cupon {
+        color: white;
+        background-color:#FF5E01;
+        border-radius: 50px;
+        padding: 25px 50px 25px 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        margin-top:1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    .cuponIcono {
+        margin-left: 1em;
+    }
+
+
+    /* Estilos de "comentarios/reseñas" */
+
+    
+    .section-9 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barrita-section8 {
+        background: #FEA700;
+        height: 1.5px;
+        width: 100%;
+        margin-top: 10em;
+    }
+
+    .titulo-comentarios {
+        margin-top: 1em;
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .card-comentario1 {
+        width: 85%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5em;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: #f8f6f3;
+        box-shadow: 0px 0px 10px 0px rgba(20, 20, 20, 0.4);
+        margin-bottom: 5em;
+    }
+
+    .estrella {
+        margin-top: 2em;
+        color: rgb(240, 191, 59);
+        font-size: 2em;
+    }
+
+    .card-comentario1 p {
+        text-align: center;
+        margin: 2em 10em;
+        font-size: 2em;
+    }
+
+    .usuario-1 {
+        width: 8em;
+        height: 8em;
+        border-radius: 50%; 
+        object-fit: cover;
+        max-width: none;
+    }
+
+    
+    .contenedor-propaganda {
+        width: 85%;
+        height: 120vh;
+        background-image: url(../imagenes/imagen-propaganda.jpg);
+        background-size: cover;              
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: .2em;
+        z-index: -1;
+        
+    }
+
+    .contenedor-propaganda h3 {
+        color: #fff;
+        text-align: center;
+        font-weight: 1em;
+        font-size: 5em;
+        margin-top: 5em;
+
+    }
+
+    .boton-propaganda {
+        color: white;
+        background-color:#FF5E01;
+        border-radius: 50px;
+        padding: 30px 60px 30px 60px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        margin-top:1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
+
+
+    /* Estilos de contacto */
+
+    
+    .contenedor-titulo-sec10 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .barrita-contacto {
+        background: #FEA700;
+        height: 3px;
+        width: 20%;
+        margin-top: 10em;
+    }
+
+    .contenedor-titulo-sec10 h2 {
+        margin-top: 30px;
+    }
+
+    .card-contacto {
+        width: 85%;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: #f8f6f3;
+        box-shadow: 0px 0px 10px 0px rgba(40,40,40,0.4);
+        margin-bottom: 2em;
+        font-size: 1.3em;
+        margin-top: 2em;
+    }
+
+    .contenedor-general-cards-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icono-contacto {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos pié de página */
+
+    footer {
+        text-align: center;
+        line-height: 3em;
+        color: #fff;
+        background-color: rgb(31, 29, 29);
+    }
+
+
+}
