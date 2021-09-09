@@ -31,7 +31,7 @@
 
 /* MEDIA QUERY -----> estilos óptimos para Galaxy s5 Android 5.0 */
 
-@media screen and  (max-width:900px) {
+@media screen and  (max-width:950px) {
 
         .contenedor-textoPortada-desktop {
             display: none;
@@ -40,40 +40,38 @@
         .haeder-2 {
             display: none;
         }
-        
-        .portada {
+
+        .contenedor-textoPortada {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            filter: brightness(80%);
+            height: 30vh;
+            background-image: url(../imagenes/portada.jpg);
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
         }
 
         .contenedor-textoPortada h1 {
-            position: absolute;
-            top: 6.5em;
-            left: 3em;
-            color:#fff;
-            font-weight: bold;
-            z-index: 1;
-            font-size:x-large;
+            font-size: 1.5em;
+            
         }
         .contenedor-textoPortada h2 {
-            position: absolute;
-            top: 5em;
-            left: 5em;
-            color:#fff;
-            font-weight: bold;
-            z-index: 1;
+            text-transform: uppercase;
+            font-size: 1.3em;
         }
 
         .boton-portada {
             color: white;
             text-decoration: none;
-            position: absolute;
-            top:17em;
-            left: 12.2em;
             background-color: #FF5E01;
-            padding: 10px;
-            border-radius: 15px;
-            font-size: 12px;
+            padding: 10px 10px;
+            border-radius: 10px;
+            font-size: .8em;
+    
         }
 
         .titulo-conocenos {
@@ -568,6 +566,8 @@
             margin: 10px 20px;
             padding: 10px;
             display: none;
+            position: absolute;
+            right: 0;
         }
 
         header label:hover {
@@ -618,6 +618,8 @@
         header label {
             display: block;
             margin-left: 8em;
+            position: absolute;
+            right: 0;
         }
 
         .menu ul {
@@ -627,7 +629,7 @@
 
         .menu {
             position: absolute;
-            top: 10%;
+            top: 9%;
             background-color: #fff;
             width: 100%;
             margin-left: -100%;
@@ -657,7 +659,7 @@
 
     .menu {
         position: absolute;
-        top: 10%;
+        top: 8%;
         background-color: #fff;
         width: 100%;
         margin-left: -100%;
@@ -665,35 +667,39 @@
         z-index: 2;
         padding-bottom: 60px;
     }
-    
+    .contenedor-textoPortada {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+        background-image: url(../imagenes/portada.jpg);
+        background-size:contain;
+        background-repeat: no-repeat;
+        /* background-position:; */
+        background-attachment: fixed;
+        color: #fff;
+    }
+
     .contenedor-textoPortada h1 {
-        position: absolute;
-        top: 6.5em;
-        left: 3em;
-        color:#fff;
-        font-weight: bold;
-        z-index: 1;
-        font-size:x-large;
+        font-size: 1.5em;
+        
     }
     .contenedor-textoPortada h2 {
-        position: absolute;
-        top: 5em;
-        left: 5em;
-        color:#fff;
-        font-weight: bold;
-        z-index: 1;
+        text-transform: uppercase;
+        font-size: 1.3em;
     }
 
     .boton-portada {
         color: white;
         text-decoration: none;
-        position: absolute;
-        top:17em;
-        left: 12.2em;
         background-color: #FF5E01;
-        padding: 10px;
-        border-radius: 15px;
-        font-size: 12px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        font-size: .8em;
+        margin-bottom: 4em;
+
     }
 
 
@@ -788,7 +794,7 @@
 /* Media querys ----> habilitado para  Ipad, y todo tipo de tablets */
 
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:750px) {
 
     .contenedor-textoPortada-desktop {
         display: none;
@@ -800,6 +806,41 @@
 
     .section-2 {
         display: none;
+    }
+
+    .contenedor-textoPortada {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40vh;
+        background-image: url(../imagenes/portada.jpg);
+        background-size:contain;
+        background-repeat: no-repeat;
+        /* background-position:; */
+        background-attachment: fixed;
+        color: #fff;
+    }
+
+    .contenedor-textoPortada h1 {
+        font-size: 2.5em;
+        
+    }
+    .contenedor-textoPortada h2 {
+        text-transform: uppercase;
+        font-size: 2em;
+    }
+
+    .boton-portada {
+        color: white;
+        text-decoration: none;
+        background-color: #FF5E01;
+        padding: 20px 20px;
+        border-radius: 10px;
+        font-size: .8em;
+        margin-bottom: 4em;
+
     }
 
     
@@ -882,15 +923,6 @@
         height: 96px;
         margin-left: 20px;
     }
-
-    header div {
-        margin-right: 300px;
-    }
-
-    header label:hover {
-        cursor: pointer;
-        background-color: rgba(0,0,0, .3);
-    }
     
     header {
         display: flex;
@@ -902,10 +934,9 @@
     .menu ul {
         list-style: none;
         display: flex;
+        width: 100%;
         
     }
-    
-    
     
     .menu ul li:hover {
         background-color: rgba(0,0,0, .3);
@@ -926,7 +957,9 @@
 
     header label {
         display: block;
-        margin-left: 8em;
+        /* margin-left: 8em; */
+        position: absolute;
+        right: 0;
     }
 
     .menu ul {
@@ -942,7 +975,7 @@
         margin-left: -100%;
         transition: all .5s;
         z-index: 2;
-        padding-bottom: 120px;
+        padding-bottom:180px;
         font-size: 1.5em;
         display: flex;
         flex-direction: column;
@@ -950,39 +983,7 @@
 
 
     
-    /* Estilos de la portada */
-
-    
-    .contenedor-textoPortada h1 {
-        position: absolute;
-        top: 6em;
-        left: 3.5em;
-        color:#fff;
-        font-weight: bold;
-        z-index: 1;
-        font-size:3em;
-    }
-    .contenedor-textoPortada h2 {
-        position: absolute;
-        top: 7em;
-        left: 9.3em;
-        color:#fff;
-        font-weight: bold;
-        z-index: 1;
-        font-size: 2em;
-    }
-
-    .boton-portada {
-        color: white;
-        text-decoration: none;
-        position: absolute;
-        top:25em;
-        left: 19em;
-        background-color: #FF5E01;
-        padding: 20px 40px;
-        border-radius: 15px;
-        font-size: 1em;
-    }
+   
 
     /* Estilos section 3 y 4  */
 
@@ -1209,7 +1210,7 @@
 
 
 
-/* Formato de escritorio */
+/* Formato de escritorio -----> tamaño de pantalla promedio desktop */
 
 @media screen and (min-width:1000px) {
 
@@ -1229,6 +1230,17 @@
         justify-content: center;
         align-content: center;
         z-index: 2;
+        height: 20vh;
+        background-color: rgba(255, 255, 255, 0.74);
+    }
+
+    .cont-logo {
+        position: absolute;
+        left: 0;
+    }
+
+    .logo-desktop {
+        width: 50%;
     }
 
     .haeder-2 nav ul {
@@ -1242,7 +1254,7 @@
     }
 
     .btn-comprar {
-        margin-left: 3em;
+        margin-right: 8%;
         color: white;
         background-color:#FF5E01;
         border-radius: 50px;
@@ -1251,6 +1263,8 @@
         text-transform: uppercase;
         font-weight: bolder;
         font-size: 1em;
+        position: absolute;
+        right: 0;
     }
 
     .btn-comprar i {
@@ -1274,7 +1288,7 @@
     .wave-1 {
         display: block;
         position: absolute;
-        bottom:0;
+        bottom:-55vh;
         z-index: 1;
     }
 
@@ -1285,7 +1299,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: 150vh;
         background-image: url(../imagenes/portada.jpg);
         background-size:cover;
         background-repeat: no-repeat;
