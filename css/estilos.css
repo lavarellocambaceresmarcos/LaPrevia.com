@@ -1,7 +1,7 @@
 * { 
     margin:0px;
     padding : 0px;
-    box-sizing : border box;
+    box-sizing : border-box;
     overflow-x : hidden;
     font-family: 'Montserrat', sans-serif;
 }
@@ -29,9 +29,15 @@
 
 
 
+
+
 /* MEDIA QUERY -----> estilos óptimos para Galaxy s5 Android 5.0 */
 
-@media screen and  (max-width:950px) {
+@media screen and  (max-width:1199px) {
+
+        .desktop {
+            display: none;
+        }
 
         .contenedor-textoPortada-desktop {
             display: none;
@@ -137,7 +143,7 @@
     }
 
     .bg-img {
-        background-image:url(../imagenes/imagen-propaganda.jpg);
+        background-image:url(../imagenes/quines-somos.jpg);
         height: 70vh;
         width: 100%;   
         filter:brightness(0.4);
@@ -350,7 +356,7 @@
             align-items: center;
             background-color: white;
             width: 80%;
-            height: 400px;
+            height: 65vh;
             text-align: center;
             border-radius: 10px;
             padding-bottom: 20px;
@@ -643,11 +649,13 @@
         }
 }
 
-
-
 /* Media query ------>  estilos específicos, óptimos para galaxy s9 y android 7.0 */
 
 @media screen and  (min-height:730px) {
+
+    .desktop {
+        display: none;
+    }
 
     .contenedor-textoPortada-desktop {
         display: none;
@@ -787,14 +795,182 @@
 }
 
 
+/* MEDIA QUERY ----> formato horizontal dispositivos móviles */
 
+@media screen and (min-width:640px) {
+    
+    .desktop {
+        display: none;
+    }
+
+    /* Menu desplegable */
+
+    .menu {
+        position: absolute;
+        top: 16%;
+        background-color: #fff;
+        width: 100%;
+        margin-left: -100%;
+        transition: all .5s;
+        z-index: 2;
+        padding-bottom: 60px;
+    }
+
+    /* Portada */
+
+    .contenedor-textoPortada{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(../imagenes/portada.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #fff;
+    } 
+
+    .contenedor-textoPortada h1 {
+        font-size: 1.5em;
+        
+    }
+    .contenedor-textoPortada h2 {
+        text-transform: uppercase;
+        font-size: 1.3em;
+    }
+
+    .boton-portada {
+        color: white;
+        text-decoration: none;
+        background-color: #FF5E01;
+        padding: 10px 10px;
+        border-radius: 10px;
+        font-size: .8em;
+
+    }
+
+
+    /* Cards productos */
+
+    .card-producto {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 80%;
+        height: 140vh;
+        text-align: center;
+        border-radius: 10px;
+        padding-bottom: 20px;
+    }
+
+    .card-producto h3 {
+        font-size: 1.6em;
+        margin-top: 1.2em;
+    }
+
+    .card-producto p {
+        margin: 20px 40px 20px 40px;
+    }
+
+    .img-card {
+        width: 50%;
+    }
+
+    .card-producto a {
+        color: white;
+        background-color:#FF5E01;
+        border-radius: 50px;
+        padding: 15px 30px 15px 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 11px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Quienes somos */
+
+    .section-2-desktop {
+        margin-top: 5em;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .bg-img {
+        background-image:url(../imagenes/quines-somos.jpg);
+        height: 100vh;
+        width: 100%;   
+        filter:brightness(0.4);
+        background-size: cover;
+    }
+
+
+    .section-2-desktop .content {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        margin-top: 3em;
+        position: absolute;  
+        top: 0;
+    }
+
+
+    .section-2-desktop div p {
+        text-align: center;
+        margin: 2em 5em;
+    }
+
+    .section-2-desktop {
+        display: block;
+    }
+
+
+    .section-2-desktop div ul li  i {
+        color: rgb(23, 206, 23);
+        margin-right: .4em;
+    }
+
+
+    .boton-quienesSomos-desktop {
+        margin-top: 2em;
+        background-color:#FF5E01;
+        color: white;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2em;
+        text-decoration: none;
+    }
+
+    .boton-quienesSomos-desktop i {
+        margin-left: .5em;
+    }
+
+}
 
 
 
 /* Media querys ----> habilitado para  Ipad, y todo tipo de tablets */
 
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:768px) {
+
+    .desktop {
+        display: none;
+    }
 
     .contenedor-textoPortada-desktop {
         display: none;
@@ -818,7 +994,6 @@
         background-image: url(../imagenes/portada.jpg);
         background-size:contain;
         background-repeat: no-repeat;
-        /* background-position:; */
         background-attachment: fixed;
         color: #fff;
     }
@@ -877,7 +1052,6 @@
 
     .section-2-desktop div p {
         text-align: center;
-        margin: 2em 5em;
     }
 
     .section-2-desktop {
@@ -1109,6 +1283,10 @@
 
      /* Estilos section 7- cards de productos */
 
+     .desc-card {
+         display: none;
+     }
+
      
      .section-7 {
         background-color:#f8f6f3;
@@ -1125,13 +1303,15 @@
         align-items: center;
         background-color: white;
         width: 80%;
-        height: 550px;
+        height: 50vh;
         text-align: center;
         border-radius: 10px;
     }
 
     .card-producto h3 {
         font-size: 1.6em;
+        margin-bottom: 2%;
+        text-transform: uppercase;
     }
 
     .card-producto p {
@@ -1140,6 +1320,8 @@
 
     .img-card {
         width: 50%;
+        border-radius: 4px;
+        box-shadow: 20px 20px 10px 5px rgba(40,40,40,0.4);
     }
 
     .card-producto a {
@@ -1208,11 +1390,161 @@
 
 }
 
+/* MEDIA QUERY -------> formato horizontal tablets */
+
+@media screen and (min-width:1000px) {
+
+    .desktop {
+        display: none;
+    }
+    /* Portada */
+
+    .contenedor-textoPortada{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        background-image: url(../imagenes/portada.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #fff;
+    } 
+
+    .contenedor-textoPortada h1 {
+        font-size: 3.5em;
+        
+    }
+    .contenedor-textoPortada h2 {
+        text-transform: uppercase;
+        font-size: 3.3em;
+    }
+
+    .boton-portada {
+        color: white;
+        text-decoration: none;
+        background-color: #FF5E01;
+        padding: 20px 20px;
+        border-radius: 10px;
+        font-size: 1.8em;
+
+    }
+
+    /* Quienes somos */
+
+    .section-2-desktop {
+        margin-top: 5em;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .bg-img {
+        background-image:url(../imagenes/quines-somos.jpg);
+        height: 100vh;
+        width: 100%;   
+        filter:brightness(0.4);
+        background-size: cover;
+    }
+
+
+    .section-2-desktop .content {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        margin-top: 3em;
+        position: absolute;  
+        top: 0;
+    }
+
+
+    .section-2-desktop div p {
+        text-align: center;
+        margin: 2em 5em;
+    }
+
+    .section-2-desktop {
+        display: block;
+    }
+
+
+    .section-2-desktop div ul li  i {
+        color: rgb(23, 206, 23);
+        margin-right: .4em;
+    }
+
+
+    .boton-quienesSomos-desktop {
+        margin-top: 2em;
+        background-color:#FF5E01;
+        color: white;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2em;
+        text-decoration: none;
+    }
+
+    .boton-quienesSomos-desktop i {
+        margin-left: .5em;
+    }
+
+    /* Cards productos */
+
+    .card-producto {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 80%;
+        height: 80vh;
+        text-align: center;
+        border-radius: 10px;
+        padding-bottom: 20px;
+    }
+
+    .card-producto h3 {
+        font-size: 1.6em;
+        margin-top: 1.2em;
+    }
+
+    .card-producto p {
+        margin: 20px 40px 20px 40px;
+    }
+
+    .img-card {
+        width: 50%;
+    }
+
+    .card-producto a {
+        color: white;
+        background-color:#FF5E01;
+        border-radius: 50px;
+        padding: 15px 30px 15px 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 11px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
 
 
 /* Formato de escritorio -----> tamaño de pantalla promedio desktop */
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1200px) {
 
     h2 {
         font-size: 2.5em;
@@ -1227,6 +1559,8 @@
     .haeder-2 {
         display:flex;
         position: fixed;
+        right: 0;
+        left: 0;
         justify-content: center;
         align-content: center;
         z-index: 2;
@@ -1459,74 +1793,106 @@
 
      /* Estilos section 3 y 4  */
 
+    .section-3 {
+        display: none;
+    }
+
     
-     .section-3 {
-        margin-top:10em;
-        margin-bottom: 50px;
-    }
+.section-3-remake {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    
+}
 
-    .cont-bebidas-fav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.cont-texto {
+    width: 25rem;
+}
 
-    .titulo-bebidasFav {
-        text-transform: uppercase;
-        text-align: center;
-    }
+.texto-descrip {
+    width: 25rem;
+    margin-right: 1rem;
+    font-size: 1.05rem;
+}
 
-    .borde-bajo2 {
-        background: #FEA700;
-        height: 3px;
-        width: 20%;
-        margin-top: 7px;
-    }
+.intro-h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    width: 25rem;
+}
 
-    .texto-bebidasFav {
-        font-weight:100;
-        font-size: 1.3em;
-        margin: 2em 15em;
-        text-align: center;
-    }
+.linea {
+    height: 1rem;
+    background-color: orange;
+    border: none;
+    width: 30%;
+    margin: 2rem 0 2rem 0;
+}
+
+.cont-imagenes {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-1 {
+    height: 15rem;
+    width: 22rem;
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+}
+
+.imagen-2 {
+    height: 15rem;
+    width: 22rem;
+    border-radius: .3rem;
+}
+
+.imagen-3 {
+    height: 31rem; 
+    margin-left: 1rem;
+    border-radius: .3rem;
+}
+
 
     .section-4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 10em;
+        display: none;
     }
 
-    .borde-3 {
-        background: #FEA700;
-        height: 1.5px;
-        width: 30%;
-        margin-top: 4em;
-    }
+    
+.section-4-remake {
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    
+}
 
-    .bordeGrueso-4 {
-        background: #FEA700;
-        height: 10px;
-        width: 30%;
-        margin-top: 30px;
-    }
+.cont-texto-previa {
+    width: 35rem;
+    margin-top: 10rem;
+}
 
-    .contenido-sect-4 {
-        text-align: center;
-        margin-top: 40px;
-        height: 20em;
-    }
+.intro-h2-2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    width: 35rem;
+    margin-bottom: 5rem;
+}
 
-    .titulo-sedientoPrevia1 {
-        text-transform: uppercase;
-        font-size: 2em;
-    }
+.linea-2 {
+    height: .5rem;
+    background-color: orange;
+    border: none;
+    width: 90%;
+    margin: 2rem 0 2rem 0;
+}
 
-    .titulo-sedientoPrevia2 {
-        font-size: 1.5em;
-        text-transform: uppercase;
-        margin-bottom: 2em;
-    }
+.imagen-3-previa {
+    height: 51rem; 
+    margin-left: 4rem;
+    border-radius: .3rem;
+}
+
 
     .boton-comprar-ahora {
         color: white;
@@ -1536,11 +1902,11 @@
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bolder;
-        font-size: 1em;
+        font-size: 1rem;
     } 
 
     .carrito-boton {
-        margin-right: 15px;
+        margin-right: 1rem;
     }
 
 
