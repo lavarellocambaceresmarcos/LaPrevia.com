@@ -35,6 +35,10 @@
 
 @media screen and  (max-width:1199px) {
 
+        .section-1-rmk {
+            display: none;
+        }
+
         .desktop {
             display: none;
         }
@@ -653,6 +657,10 @@
 
 @media screen and  (min-height:730px) {
 
+    .section-1-rmk {
+        display: none;
+    }
+
     .desktop {
         display: none;
     }
@@ -798,6 +806,10 @@
 /* MEDIA QUERY ----> formato horizontal dispositivos móviles */
 
 @media screen and (min-width:640px) {
+
+    .section-1-rmk {
+        display: none;
+    }
     
     .desktop {
         display: none;
@@ -967,6 +979,10 @@
 
 
 @media screen and (min-width:768px) {
+
+    .section-1-rmk {
+        display: none;
+    }
 
     .desktop {
         display: none;
@@ -1394,6 +1410,10 @@
 
 @media screen and (min-width:1000px) {
 
+    .section-1-rmk {
+        display: none;
+    }
+
     .desktop {
         display: none;
     }
@@ -1564,7 +1584,7 @@
         justify-content: center;
         align-content: center;
         z-index: 2;
-        height: 20vh;
+        height: 10rem;
         background-color: rgba(255, 255, 255, 0.74);
     }
 
@@ -1574,7 +1594,7 @@
     }
 
     .logo-desktop {
-        width: 50%;
+        width: 15rem;
     }
 
     .haeder-2 nav ul {
@@ -1584,11 +1604,12 @@
     .haeder-2 nav a {
         text-decoration: none;
         color: rgb(31, 30, 30);
-        margin-left: 3em;
+        margin-left: 3rem;
+        font-size: 1rem;
     }
 
     .btn-comprar {
-        margin-right: 8%;
+        margin-right: 8rem;
         color: white;
         background-color:#FF5E01;
         border-radius: 50px;
@@ -1596,7 +1617,7 @@
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bolder;
-        font-size: 1em;
+        font-size: 1rem;
         position: absolute;
         right: 0;
     }
@@ -1666,56 +1687,85 @@
     /* Estilos section-1 */
 
     .section-1 {
-        margin-top: 200px;
+        margin-top: 20rem;
     }
 
     .titulo-conocenos {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 5em;
+        margin-bottom: 5rem;
     }
 
     .titulo-conocenos h2 {
-        font-size: 2.5em;
+        font-size: 2.5rem;
         text-transform: uppercase;
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
     }
 
     .borde-bajo {
-        height: .3em;
-        width: 20%;
+        height: .3rem;
+        width: 20rem;
         background-color:#FEA700;
     }
 
     
     .card-entregas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: none;  
     }
 
-    .card-entregas h3 {
-        margin-top: 20px;
-        font-size: 2em;
-        font-weight: 400;
-    }
+    /* estilos section-1-remake */
 
     
-    .imagen-envios {
-        width: 80%;
-        margin-top: 50px;
-    }
+.section-1-rmk {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
-    .boton-envios {
-        color: white;
-        text-decoration: none;
-        background-color: #FF5E01;
-        padding: 20px;
-        border-radius: 15px;
-        font-size: 1em;
-        margin-top: 20px;
-    }
+.cont-card-elegirnos {
+    width: 37rem;
+    height: 36rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;    
+}
+
+.cont-card-elegirnos h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 35rem;
+    height: 3rem;
+}
+
+
+.imagen-card-elegirnos {
+    width: 35rem;
+    border-radius: .5rem;
+}
+
+.btn-elegirnos {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color:#F36514;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+}
+
+.btn-elegirnos i {
+    margin-left: .5rem;
+}
 
 
 
@@ -1736,10 +1786,12 @@
 
     .bg-img {
         background-image:url(../imagenes/quines-somos.jpg);
-        height: 100vh;
+        height: 50rem;
         width: 100%;   
         filter:brightness(0.4);
-        background-size: cover;
+        background-size:cover;
+        background-position:center;
+        background-attachment: fixed;
     }
 
 
@@ -1791,35 +1843,35 @@
 
 
 
-     /* Estilos section 3 y 4  */
+     /* Estilos section 3-galería con descripción  */
 
     .section-3 {
         display: none;
     }
 
     
-.section-3-remake {
-    display: flex;
-    justify-content: center;
-    margin-top: 10rem;
+    .section-3-remake {
+        display: flex;
+        justify-content: center;
+        margin-top: 20rem;
     
-}
+    }
 
-.cont-texto {
-    width: 25rem;
-}
+    .cont-texto {
+        width: 35rem;
+    }
 
-.texto-descrip {
-    width: 25rem;
-    margin-right: 1rem;
-    font-size: 1.05rem;
-}
+    .texto-descrip {
+        width: 25rem;
+        margin-right: 0rem;
+        font-size: 1.2rem;
+    }
 
-.intro-h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    width: 25rem;
-}
+    .intro-h2 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        width: 25rem;
+    }
 
 .linea {
     height: 1rem;
@@ -1835,63 +1887,65 @@
 }
 
 .imagen-1 {
-    height: 15rem;
-    width: 22rem;
+    height: 18rem;
+    width: 24rem;
     margin-bottom: 1rem;
     border-radius: .3rem;
 }
 
 .imagen-2 {
-    height: 15rem;
-    width: 22rem;
+    height: 18rem;
+    width: 24rem;
     border-radius: .3rem;
 }
 
 .imagen-3 {
-    height: 31rem; 
+    height: 37rem; 
     margin-left: 1rem;
     border-radius: .3rem;
 }
 
+
+/* Estilos de la seccón-4-cerveza gigante */
 
     .section-4 {
         display: none;
     }
 
     
-.section-4-remake {
-    display: flex;
-    justify-content: center;
-    margin-top: 20rem;
-    margin-bottom: 20rem;
+    .section-4-remake {
+        display: flex;
+        justify-content: center;
+        margin-top: 20rem;
+        margin-bottom: 20rem;
     
-}
+    }
 
-.cont-texto-previa {
-    width: 35rem;
-    margin-top: 10rem;
-}
+    .cont-texto-previa {
+        width: 35rem;
+        margin-top: 10rem;
+    }
 
-.intro-h2-2 {
-    font-size: 5rem;
-    text-transform: uppercase;
-    width: 35rem;
-    margin-bottom: 5rem;
-}
+    .intro-h2-2 {
+        font-size: 5rem;
+        text-transform: uppercase;
+        width: 35rem;
+        margin-bottom: 5rem;
+    }
 
-.linea-2 {
-    height: .5rem;
-    background-color: orange;
-    border: none;
-    width: 90%;
-    margin: 2rem 0 2rem 0;
-}
+    .linea-2 {
+        height: .5rem;
+        background-color: orange;
+        border: none;
+        width: 90%;
+        margin: 2rem 0 2rem 0;
+    }
 
-.imagen-3-previa {
-    height: 51rem; 
-    margin-left: 4rem;
-    border-radius: .3rem;
-}
+    .imagen-3-previa {
+        height: 51rem; 
+        margin-left: 4rem;
+        border-radius: .3rem;
+    }
 
 
     .boton-comprar-ahora {
